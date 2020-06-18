@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.jpeg" type="image/jpeg">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="menu_bar">
+      <a href="index.php">
+      <div class="menu-logo">
+        <img src="img/logo.jpeg" alt="">
+        <div class="logo-data">
+          <h1>NEW HOPE OUTREACH MINISTRIES</h1>
+          <p>Training | Equipping | Sending</p>
+        </div>
+
+      </div>
+      </a>
+      <p id="show">S</p>
+
+    <ul id="ul">
+      <script type="text/javascript">
+      var ham = document.getElementById("show");
+      var men = document.getElementById("ul");
+      var stat = 0;
+      ham.addEventListener('click',function(){
+        if (stat==0) {
+          stat = 1;
+          men.style.display = "inline-flex";
+        }else {
+          stat = 0;
+          men.style.display = "none";
+        }
+      });
+      </script>
+      <li class="active "><a href="index.php"><i class="fa fa-home" ></i>Home</a></li>
+
+      <li class="" ><a href=""><i class="fa fa-info" ></i>About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="http://www.nhomchurch.com/7-2/">History</a></li>
+              <li><a href="#">Pastoral Team</a></li>
+              <li><a href="#">Our Beliefs</a></li>
+              <li><a href="#">Our Branches</a></li>
+            </ul>
+          </div>
+
+      </li>
+
+      <li class="" ><a href="#">Ministries <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <div class="sub-menu-1">
+          <ul>
+            <li class="ministries"><a href="#">Nurture Ministries <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <div class="sub-menu-2">
+                  <ul>
+                    <li><a href="#">Potterz</a></li>
+                    <li><a href="#">Junior Church</a></li>
+                    <li><a href="#">Cell Fellowship</a></li>
+                  </ul>
+                </div>
+
+            </li>
+            <li class="ministries"><a href="#">Servies Ministries <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="#">Prayer Ministry</a></li>
+                  <li><a href="#">Praise and Worship</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Holy Communion</a></li>
+                  <li><a href="#">Ushering</a></li>
+                  <li><a href="#">Transport and Security</a></li>
+                  <li><a href="#">Sound</a></li>
+                  <li><a href="#">Outreach and Missions</a></li>
+                  <li><a href="#">Sanctuary Keepers</a></li>
+                  <li><a href="#">Protocol</a></li>
+                  <li><a href="#">Hospitality</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li class="ministries"><a href="#">Fellowship Ministries <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+              <div class="sub-menu-2">
+                <ul>
+                  <li><a href="#">Potterz</a></li>
+                  <li><a href="#">Junior Church</a></li>
+                  <li><a href="#">Cell Fellowship</a></li>
+                </ul>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+
+      </li>
+      <li class="" ><a href="http://www.nhomchurch.com/events/"><i class="fa fa-calendar" ></i>Events</a></li>
+      <li class="" ><a href="books.php"><i class="fa fa-book" ></i>Books</a></li>
+      <li class="" ><a href="archives.php"><i class="fa fa-archive" ></i>Archives</a></li>
+      <li class="" ><a href="contact.php"><i class="fa fa-phone" ></i>Contact Us</a></li>
+      <li class="" ><a href="#"><i class="fa fa-yelp" ></i>Support</a></li>
+
+
+
+    </ul>
+    </div>
+    <!-- End Navbar -->
+
+  </body>
+</html>

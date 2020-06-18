@@ -1,0 +1,422 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a{
+  color: #111;
+}
+
+.menu_bar{
+  background: #fff;
+  text-align: center;
+  font-family: lato, Montserrat;
+
+
+}
+
+.menu-logo{
+text-align: left;
+display: flex;
+align-items: center;
+padding: 10px;
+}
+.menu-logo img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+
+}
+.logo-data{
+  color:#111;
+  text-decoration: none;
+}
+
+.menu_bar ul{
+  display: inline-flex;
+  list-style: none;
+  float: right;
+
+}
+.menu_bar ul li{
+  width: 100px;
+  margin: 10px 0px;
+  padding: 15px 0px;
+
+}
+.menu_bar ul li a{
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.active,.menu_bar ul li:hover{
+  background: #fff;
+  border-radius: 5px;
+}
+
+.fa{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* Side-Menus  */
+.sub-menu-1, .sub-menu-2{
+  display: none;
+  z-index: 9999;
+
+}
+
+.menu_bar ul li:hover .sub-menu-1{
+  display: block;
+  position: absolute;
+  background: #fff;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu_bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+
+}
+
+.menu_bar ul li:hover .sub-menu-1 ul li{
+  width: 190px;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+
+}
+
+.menu_bar ul li:hover .sub-menu-1 ul li:hover{
+background: #fff;
+border-radius: 5px;
+}
+
+.menu_bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom: none;
+}
+
+
+.ministries:hover .sub-menu-2{
+  display: block;
+  position: absolute;
+  background: #fff;
+  margin-top: -40px;
+  margin-left: 180px;
+}
+
+.ministries:hover .sub-menu-2 ul{
+  display: block;
+  margin: 10px;
+
+}
+
+.ministries:hover .sub-menu-2 ul li{
+  width: 190px;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+
+}
+
+.ministries:hover .sub-menu-2 ul li:hover{
+background: #fff;
+border-radius: 5px;
+}
+
+.ministries:hover .sub-menu-2 ul li:last-child{
+border-bottom: none;
+}
+
+/* Slider */
+
+#slider {
+	overflow: hidden;
+		height: 600px;
+    margin-top: 80px;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+	height: 600px;
+}
+
+/* Who Are We Section  */
+.wrap{
+    margin-top: 10px;
+    background-color: #fff;
+}
+.wrap h1{
+  align-items: center;
+  text-align: center;
+  color: 	#C0C0C0;
+  margin-bottom: 5px;
+}
+.wrapper{
+  position: relative;
+  width: calc(100%);
+  height:600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap:5px;
+  padding: 10px;
+
+}
+
+.holder{
+  height: calc(100%-20px);
+  background-color: #fff;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  font-family: system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+
+}
+
+.holder .fa{
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+  color: grey;
+}
+.holder_info{
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  color: #C0C0C0;
+  line-height: 25px;
+
+}
+
+.holder_info h5{
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.holder_info h6{
+  font-size: 20px;
+  text-decoration: underline;
+}
+.holder_info p{
+  font-size: 16px;
+  line-height: 25px;
+  padding: 5px;
+}
+
+.folders{
+  position: relative;
+  width: calc(100%);
+  height:600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:50px;
+  padding: 10px;
+
+}
+.folder{
+  width:100%;
+  height:500px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px solid black;
+
+}
+
+
+.folds{
+  position: relative;
+  width: calc(100%);
+  height:650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap:50px;
+  padding: 10px;
+
+}
+.fold{
+  width:100%;
+  height:550px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 10px 10px;
+  border: 1px solid black;
+
+}
+
+.fold a img{
+  width: 100%;
+  height:500px;
+  overflow: hidden;
+  border: 1px solid black;
+
+}
+
+.audio{
+  width:100%;
+  height:100px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px solid black;
+
+}
+.audio p{
+
+}
+
+
+
+.{
+
+}
+/* Animations */
+/* Slider Animation */
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+
+/* Media Query */
+@media screen and (max-width:775px) {
+.menu_bar{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  width:auto;
+  border: 1px solid black;
+}
+  .menu_bar ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .menu_bar ul li{
+    width: 25px;
+    margin: 1px 0px;
+    padding: 5px 0px;
+
+  }
+
+  .menu_bar ul li:hover .sub-menu-1{
+    display: block;
+    position: relative;
+    background: #fff;
+    margin-top: 5px;
+    margin-left: 220px;
+    height: 100px;
+  }
+  .wrapper{
+    position: relative;
+    width: calc(100%);
+    height:600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:5px;
+    padding: 10px;
+
+  }
+  .ministries:hover .sub-menu-2{
+    display: block;
+    position: relative;
+    background: #fff;
+    margin-top: 5px;
+    margin-left: 200px;
+  }
+  .folder{
+    height:300px;
+
+  }
+
+  .folds{
+    position: relative;
+    width: calc(100%);
+    height:600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:50px;
+    padding: 10px;
+
+  }
+  .fold{
+  height:150px;
+
+  }
+
+  .fold a img{
+    width: 100%;
+    height:110px;
+    overflow: hidden;
+    border: 1px solid black;
+
+  }
+
+  .menu_bar ul{
+    display: none;
+    list-style: none;
+    float: right;
+  }
+
+  #slider {
+  	overflow: hidden;
+  		height: 400px;
+      margin-top: 30px;
+  }
+
+
+
+
+
+}

@@ -1,0 +1,165 @@
+a{
+  color:#111;
+}
+.body{
+  margin:0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: #070c24;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 780px;
+  height: 600px;
+  background-color: #fff;
+  margin:10px;
+
+
+}
+
+.imgBx{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #006dbc;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.imgBx::before{
+  /* content:"BY GRACE"; */
+  position: absolute;
+  top: 2rem;
+  left: 2rem:auto;
+  color:#000;
+  opacity:0.1;
+  font-size: 8em;
+  font-weight: 800;
+}
+
+.imgBx img{
+  position: relative;
+  width: 300px;
+  transform: rotate(-10deg);
+  left:-10px;
+  transition: all;
+  transition-delay: .1s;
+  transition-duration: 1s;
+  z-index: 1000;
+}
+.imgBx img:hover{
+  transform: scale(1.2);
+
+}
+
+
+.container .details{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding:40px;
+  margin-bottom: 10px;
+
+
+}
+.container .details h2{
+  margin:0;
+  padding:0;
+  font-size:2.5em;
+  line-height: 0.8em;
+  color:#444;
+}
+
+.container .details h2 span{
+font-size: 0.4em;
+text-transform: uppercase;
+letter-spacing: 2px;
+color:#999;
+}
+
+.container .details h2 p{
+max-width: 85%;
+margin-left: 15%;
+color:#333;
+font-size: 15px;
+}
+
+.container .details h3{
+margin: 0;
+padding: 0;
+font-size: 2.5em;
+color:#a2a2a2;
+float:left;
+}
+
+label{
+  cursor: pointer;
+  background: #006bdc;
+  color:#fff;
+  border:none;
+  box-shadow: none;
+  outline: none;
+  padding:15px 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+  float: right;
+}
+
+@media screen and (max-width:1080px) {
+  .container{
+    height:auto;
+    margin:10px auto;
+    width:650px !important;
+
+
+  }
+  .details{
+    border: 1px solid black;
+
+  }
+
+
+  .container .imgBx{
+    padding:40px;
+    box-sizing: border-box;
+    width:600px !important;
+    height:auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .imgBx img{
+    left: initial;
+    max-width: 550px;
+    transform: rotate(0deg);
+  }
+
+  .details{
+    width:100% !important;
+    height: auto;
+    padding:20px;
+  }
+  .details p{
+    max-width: 100%;
+    margin-left: 0;
+    font-size:24px;
+  }
+}
